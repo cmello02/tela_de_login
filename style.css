@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+html, body, .wrapper{
+  height: 100%;
+}
+
+body{
+  display: grid;
+  place-items: center;
+  margin: 0;
+  padding: 0 24px;
+  background-image: url(Screenshot_2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "ubuntu";
+  color: hsl(0, 0%, 100%);
+  animation: 50s infinite alternate linear;
+}
+
+.principal{
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  margin: 0 20px;
+  padding: 70px 30px 44px;
+  border: 1,25rem;
+  background: #ffffff30;
+  text-align: center;
+}
+
+.principal > h1{
+  position: relative;;
+  font-size: 30px;
+  font-weight: 700px;
+  margin: 0 0 12px;
+  top: -25px;
+}
+
+.form{
+  width: 100%;
+  margin: 0;
+  display: grid;
+  gap: 16px;
+}
+
+.form > input, .form > button{
+  width: 100%;
+  height: 50px;
+}
+
+.form > input{
+  border: none;
+  background-color: rgba(118, 80, 25, 0.652);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 15px;
+  padding: 0 16px;
+  transition: 0.375s;
+}
+
+.form > input:hover{
+  border: 2px solid rgba(255, 178, 70, 0.652);
+}
+
+.form > button{
+  cursor: pointer;
+width: 100%;
+padding: 16px;
+background:rgba(118, 80, 25, 0.652);
+border: none;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-size: 1rem;
+font-weight: 600;
+text-align: center;
+letter-spacing: 2px;
+transition: all 0.375s;
+}
+
+.form > button:hover{
+  background: #a27a48;
+}
+
+.form > a{
+color: #ffffff;
+font: 0.9rem;
+text-align: left;
+text-decoration: none;
+margin-bottom: 6px;
+transition: all 0.375s;
+font-weight: 500;
+}
+
+.form > a:hover{
+
+}
+
+.button_form{
+  color: white;
+}
+
+.footer{
+  position: fixed;
+  display: flex;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  background-color: #ffffff17;
+
+}
+
+@keyframes rotate{
+  100%{
+    background-position: 30% 70%;
+  }
+}
+
+@media (width >= 500px){
+  body{
+    padding: 0;
+  }
+  .principal{
+    margin: 0;
+    width: 400px;
+  }
+}
+
+
